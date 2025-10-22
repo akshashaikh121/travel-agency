@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header class="home-header mb-3">
+                <nav  class="navbar responsive-nav fixed-top">
+                    <div class="container-fluid ">
+                        <div class="container-fluid d-flex justify-content-between">
+                        <a class="navbar-brand" href="index.html"><img class="w-50" src="img/logo1 1.png"
+                                alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-black active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-black" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-black dropdown-toggle" href="package.html" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Package
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item text-black" href="package.html">Family</a></li>
+                                            <li><a class="dropdown-item text-black" href="package.html">Solo</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                        </ul>
+                                   <li class="nav-item">
+                                        <a class="nav-link text-black" href="destination.html">Destination</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-black" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-black" href="contact.html">Contact</a>
+                                    </li>
+
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search" />
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+        </nav>
+        <nav class="non-responsive-nav">
+            <div class="navbar px-3">
+
+                <div class="nav-brand">
+                    <a href="index.html"><img src="img/logo1 1.png" alt=""></a>
+                </div>
+
+                <div class="nav-item"></div>
+                <a class="nav-link" href="">Home</a>
+                <a class="nav-link" href="">About</a>
+                <a class="nav-link" href="">Package</a>
+                <a class="nav-link" href="">Destination</a>
+                <a class="nav-link" href="">Blog</a>
+                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link stroke" href=""><img src="img/Vector (4).png" alt=""></a>
+            </div>
+            </div>
+        </nav>
+
+        <div class="header-content container  ms-5 d-flex justify-content-start">
+            <h1><span class="d-block text-white">Make in</span> your journey.</h1>
+        </div>
+        <div class="container world w-25 ms-5">
+            <p>Explore the world with what you love beautiful natural beauty.</p>
+        </div>
+        <div class="bg-white explore d-flex align-items-center justify-content-between p-2 rounded-5 ms-5 ps-4">
+            <span class="span">Location <img onclick="select_location()" src="img/Vector 2 (1).png" alt=""></span>
+            <span class="span">Date <img onclick="date_set()" src="img/Vector 2 (1).png" alt=""></span>
+            <span class="span">People <img onclick="people_count()" src="img/Vector 2 (1).png" alt=""></span>
+
+
+            <button class="rounded-5 bg-black text-white px-4 py-2">Explore</button>
+        </div>
+        <div class="content-container ms-5 d-flex justify-content-between w-50 align-items-center">
+            <div id="location"></div>
+            <div id="date"></div>
+            <div id="people"></div>
+        </div>
+        <div class="content-container ms-5 d-flex justify-content-between w-50 align-items-center">
+            <span class="small text-white mt-4 ms-2"> <span class="fw-5  text-white"> Popular Place :</span> Bali,
+                Istanbul, Rome,
+                Paris.</span>
+        </div>
+    </header>
+
+
+
+
+    <!-- ============================= first swiper ============================== -->
+
+
+    <section class="Explore mt-5 d-flex flex-column align-items-center justify-content-center w-100">
+        <div class="w-50 div text-center">
+            <h1 class="text-black  fs-1">Explore new worlds with
+
+                exotic natural scenery</h1>
+            <p class="span">Explore the world with what you love beautiful natural beauty.</p>
+        </div>
+        <div class="swiper">
+            <main class="d-flex btn-white align-items-center justify-content-between m-3">
+
+                <button class="btn btn-white swipe-button" onclick="swipe_left()"><img src="img/Vector (3).png"
+                        alt=""></button>
+                <button class="btn" onclick="swipe_right()"><img src="img/Vector (3).png" alt=""></button>
+            </main>
+
+            <div class="swiper-slide-container translate gap-4">
+
+                <div class="card">
+                    <img class="object-fit-cover" src="img/unsplash_sELcHR_bGVs.png" alt="">
+                    <div class="card-content p-2">
+                        <h4>Bali, Indonesia.</h4>
+                        <p>Bali is a beautiful tourist spot and is visited by many travelers.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/Group 46.png" class="object-fit-cover" alt="">
+                    <div class="card-content p-2">
+                        <h4>New York, USA.</h4>
+                        <p>Known as the city that never sleeps, New York shines with its iconic skyline.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/avif" class="object-fit-cover" alt="">
+                    <div class="card-content p-2">
+                        <h4>Paris, France.</h4>
+                        <p>Paris is the city of love and lights, known for the Eiffel Tower and cozy cafés.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/rome-things-to-do-guide.webp" class="object-fit-cover" alt="">
+                    <div class="card-content p-2">
+                        <h4>Rome, Italy.</h4>
+                        <p>Rome blends history and beauty, home to the Colosseum and ancient ruins.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/a2cfa30a91130b5b42c01041776ddfd4.jpg" class="object-fit-cover" alt="">
+                    <div class="card-content p-2">
+                        <h4>Bangkok, Thailand.</h4>
+                        <p>Bangkok welcomes you with golden temples and authentic Thai culture.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Fujiyoshida_1544786567.avif" class="object-fit-cover" alt="">
+                    <div class="card-content p-2">
+                        <h4>Tokyo, Japan.</h4>
+                        <p>Tokyo is a stunning mix of old and new, from serene temples to vibrant, futuristic streets.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ============================= second swiper ============================== -->
+
+    <section onscroll="anime()"
+        class="why-choose-us my-5 d-flex flex-column align-items-center justify-content-center w-100">
+
+        <div class="w-50 mt-5 text-center">
+            <h1 class="fs-1 text-center text-white">Why choose Us?</h1>
+        </div>
+        <div id="anime" class=" swiper-I">
+            <main class="d-flex align-items-center justify-content-between m-3">
+
+                <button onclick="swipe_l()" class="btn bg-white  swipe-button"><img src="img/Vector (3).png"
+                        alt=""></button>
+                <button onclick="swipe_r()" class="btn bg-white "><img src="img/Vector (3).png" alt=""></button>
+            </main>
+
+            <div class="swiper-slide-container swiperx translate gap-4">
+
+                <!-- ============= card 1 =============== -->
+
+                <div class="card ps-3">
+                    <div class="card-item">
+                        <img src="img/Group 31.png" alt="">
+                        <h5 class="text-black">Best Service</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- ============= card 2 =============== -->
+
+                <div class="card ps-3">
+                    <div class="card-item">
+                        <img src="img/Group 31 (1).png" alt="">
+                        <h5 class="text-black">Price Guarantee</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="card ps-3">
+                    <div class="card-item">
+                        <img src="img/Group 31 (2).png" alt="">
+                        <h5 class="text-black">Handpicked Hotels</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="card ps-3">
+                    <div class="card-item">
+                        <img src="img/3064197.png" alt="">
+                        <h5 class="text-black">Secure Booking</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div>
+                <div class="card ps-3">
+                    <div class="card-item">
+                        <img src="img/78944.png" alt="">
+                        <h5 class="text-black">24/7 Customer Support</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="card ps-3">
+                    <div class="card-item">
+                        <img src="img/3322835.png" alt="">
+                        <h5 class="text-black">Flexible Cancellation</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="card ps-3">
+                    <div class="card-item">
+                        <img src="img/discount--v1.png" alt="">
+                        <h5 class="text-black">Exclusive Travel Deals</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="partner d-flex justify-content-center align-items-center flex-column mt-5">
+        <div class="w-50 d-flex flex-column align-items-center justify-content-center text-center">
+            <h1>Our tour partner</h1>
+            <p class="span w-75">There are many variation of passage of lorem ipsum available but the majority have
+                suffered alteration </p>
+
+        </div>
+        <div class="d-flex company container brand align-items-center justify-content-around m-5 p-5 w-100">
+            <img src="img/Katana.png" alt="">
+            <img src="img/travava.png" alt="">
+            <img src="img/bigui.png" alt="">
+            <img src="img/Booking.com.png" alt="">
+            <img src="img/Jakmaen.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="testimonial container">
+        <h3 class="text-secondary">TESTIMONIAL</h3>
+        <h2 class="h2">What our client say</h2>
+        <p class="span w-25">Create a visual identity for your company and a overall brand</p>
+        <div>
+            <main class="d-flex   align-items-center justify-content-end gap-4 m-3">
+
+                <button onclick="Left()" style="box-shadow: 0px 0px 4px grey;" class="btn btn-white swipe-button"><img
+                        src="img/Vector (3).png" alt=""></button>
+                <button onclick="Right()" style="box-shadow: 0px 0px 4px grey;" class="btn bg-white"><img
+                        src="img/Vector (3).png" alt=""></button>
+            </main>
+        </div>
+        <div class="review d-flex align-items-center  ">
+            <div class="review-swiper overflow-hidden">
+                <!-- =================== card 1 ========================== -->
+                <div class="d-flex gap-4 ">
+                    <div
+                        class="card animation-II pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        <div class="d-flex m-3 align-items-center justify-content-center flex-column">
+                            <img class="rounded-5 object-fit-cover" style="width: 100px;" src="img/client 1.png" alt="">
+                            <h5>Sara Jay</h5>
+                            <h6 class="text-secondary">Treveller</h6>
+                        </div>
+                        <div class="container p-4">
+                            <img class="small-img" src="img/Star.png" alt="">
+                            <p class="span">Before we define any approach, we need to deline the brands overall goal. We
+                                then
+                                need to dive.</p>
+                        </div>
+                    </div>
+
+                    <!-- =================== card 2 ========================== -->
+                    <div
+                        class="card animation-I pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        <div class="d-flex m-3 align-items-center justify-content-center flex-column">
+                            <img class="rounded-5 object-fit-cover" style="width: 100px;" src="img/client 2.png" alt="">
+                            <h5>Cristian Daniel</h5>
+                            <h6 class="text-secondary">Treveller</h6>
+                        </div>
+                        <div class="container p-4">
+                            <img class="small-img" src="img/Star.png" alt="">
+                            <p class="span">Before we define any approach, we need to deline the brands overall goal. We
+                                then
+                                need to dive.</p>
+                        </div>
+                    </div>
+                    <!-- =================== card 3 ========================== -->
+                    <div
+                        class="card animation-II pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        <div class="d-flex m-3 align-items-center justify-content-center flex-column">
+                            <img class="rounded-5 object-fit-cover" style="width: 100px;" src="img/client 3.png" alt="">
+                            <h5>Kausar Hasan</h5>
+                            <h6 class="text-secondary">Treveller</h6>
+                        </div>
+                        <div class="container p-4">
+                            <img class="small-img" src="img/Star.png" alt="">
+                            <p class="span">Before we define any approach, we need to deline the brands overall goal. We
+                                then
+                                need to dive.</p>
+                        </div>
+                    </div>
+                    <!-- =================== card 4 ========================== -->
+                    <div
+                        class="card animation-I pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        <div class="d-flex m-3 align-items-center justify-content-center flex-column">
+                            <img class="object-fit-cover img-card" style="width: 100px;"
+                                src="img/pexels-photo-774909.jpeg" alt="">
+                            <h5>Sofia Martinez</h5>
+                            <h6 class="text-secondary">Treveller</h6>
+                        </div>
+                        <div class="container p-4">
+                            <img class="small-img" src="img/Star.png" alt="">
+                            <p class="span">Before we define any approach, we need to deline the brands overall goal. We
+                                then
+                                need to dive.</p>
+                        </div>
+                    </div>
+                    <!-- =================== card 5 ========================== -->
+                    <div
+                        class="card animation-II pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        <div class="d-flex m-3 align-items-center justify-content-center flex-column">
+                            <img class=" object-fit-cover img-card" style="width: 100px;"
+                                src="img/pexels-photo-220453.jpeg" alt="">
+                            <h5>Liam Anderson</h5>
+                            <h6 class="text-secondary">Treveller</h6>
+                        </div>
+                        <div class="container p-4">
+                            <img class="small-img" src="img/Star.png" alt="">
+                            <p class="span">Before we define any approach, we need to deline the brands overall goal. We
+                                then
+                                need to dive.</p>
+                        </div>
+                    </div>
+                    <!-- =================== card 6 ========================== -->
+                    <div
+                        class="card animation-I pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        <div class="d-flex m-3 align-items-center justify-content-center flex-column">
+                            <img class=" object-fit-cover img-card" style="width: 100px;"
+                                src="img/pexels-photo-415829.jpeg" alt="">
+                            <h5>Elena Novak</h5>
+                            <h6 class="text-secondary">Treveller</h6>
+                        </div>
+                        <div class="container p-4">
+                            <img class="small-img" src="img/Star.png" alt="">
+                            <p class="span">Before we define any approach, we need to deline the brands overall goal. We
+                                then
+                                need to dive.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="subscribe-container d-flex flex-column justify-content-around gap-4 text-center m-3 py-5">
+            <div>
+                <h1 class="text-white fs-1">Subcribe to get special price</h1>
+                <p class="span">Dont wanna miss something? subscribe right now and get special promotion and monthly
+                    newsletter</p>
+            </div>
+            <div>
+                <form id="subscribeForm">
+                    <input type="email" id="email" placeholder="Type your email here" class="w-75 p-3 rounded-5"
+                        required>
+                    <button class="btn bg-black button text-white rounded-5 px-3 py-2" id="sub"
+                        onclick="handleSubmit(event)">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer class="m-5 pt-5">
+        <div class="row">
+            <div class="col-md-5 ">
+                <img src="img/logo 2.png" class="" alt="">
+                <p class="span w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra
+                    condimentum.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h3 class="">Contact Information</h3>
+                <p class="span"><img src="img/ic_baseline-place.png" alt="">732 Despard St, Atlanta</p>
+                <p class="span"><img src="img/carbon_phone-filled.png" alt="">+97 888 8888</p>
+                <p class="span"><img src="img/fluent_mail-20-filled.png" alt="">info@traveller.com</p>
+            </div>
+            <div class="col-md-2 d-flex flex-column gap-2">
+                <h3>Quick Link</h3>
+                <a href="index.html" class=" text-secondary">Home</a>
+                <a href="about.html" class=" text-secondary">About us</a>
+                <a href="tour.html" class=" text-secondary">Tour</a>
+                <a href="contact.html" class="text-secondary">Contact</a>
+
+            </div>
+            <div class="col-md-2 d-flex flex-column gap-2">
+                <h3>Follow Us</h3>
+                <div class="d-flex gap-2">
+                    <img src="img/Vector (4).png" alt="">
+                    <img src="img/Vector (5).png" alt="">
+                    <img src="img/Vector (6).png" alt="">
+                    <img src="img/Vector (7).png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-black w-100 pt-3 pb-1 text-center">
+        <p class="span">Copyright © All rights reserved (Website Developed & Managed by creativechroma)</p>
+    </div>
+    <script src="js/coustom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/704bbd17a1.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

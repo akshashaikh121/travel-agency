@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+a {
+    color: aliceblue !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: rgb(189, 185, 185) !important;
+}
+
+.stroke {
+    background-color: rgb(64, 64, 64) !important;
+    border-radius: 10px;
+    width: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 2px white;
+
+}
+
+.navbar {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+}
+
+.home-header {
+    background-image: url(../img/suitcase-travel-summer-holidays-vacation-travelers-luggage\ 1.png);
+    height: 120vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+option {
+    color: gray;
+    background: #000;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+}
+
+h1 {
+    font-size: 70px !important;
+    /* color: #fff !important; */
+}
+
+
+.header-content {
+    width: 50% !important;
+    height: 40%;
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+
+}
+
+
+header p,
+header h1 {
+    color: #fff !important;
+}
+
+header p {
+    font-size: 14px;
+}
+
+.explore {
+    width: 40%;
+}
+
+.span {
+    color: gray;
+    font-size: 14px;
+
+}
+
+.small {
+    font-size: 12px;
+}
+
+.card {
+    /* height: 377px !important; */
+    width: 45% !important;
+    color: black;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.Explore {
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.swiper {
+    width: 75%;
+    overflow: hidden;
+
+    /* hides extra cards */
+}
+
+.swiper-I {
+    width: 75%;
+    overflow: hidden;
+    transform: translateY(300px);
+    transition: all 1s ease;
+
+
+    /* hides extra cards */
+}
+
+.swiper-slide-container {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease;
+}
+
+.card {
+    flex: 0 0 300px;
+    height: 367px !important;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 30;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    opacity: 0;
+    /* transform: translateY(0); */
+    transition: all 0.6s ease;
+    height: auto;
+    visibility: hidden;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+    /* transform: translateY(0); */
+    visibility: visible;
+}
+
+.translate {
+    transform: translateX(0px);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swipe-button {
+    transform: rotate(180deg);
+}
+
+.why-choose-us {
+    background: url(../img/unsplash_okVXy9tG3KY.png) no-repeat center;
+    background-size: cover;
+    overflow-x: hidden;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 10px; */
+    position: relative;
+    /* overflow-y: visible; */
+}
+
+.why-choose-us .swiper-I {
+    overflow-y: hidden;
+
+}
+
+.why-choose-us .card {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: fit-content;
+    width: 200px !important;
+    gap: 10px;
+    transition: all 0.6s ease;
+    position: relative;
+    z-index: 1;
+    top: 40px;
+
+}
+
+.why-choose-us .card .card-item {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+.why-choose-us .card img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.why-choose-us .card:hover {
+    transform: translateY(-40px);
+}
+
+
+.why-choose-us .card a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.brand img {
+    width: 90px;
+    height: 30px;
+}
+
+.h2 {
+    font-size: 42px !important;
+}
+
+.small-img {
+    width: 80px !important;
+    height: 20px !important;
+}
+
+.review .card {
+    width: 320px !important;
+    height: 400px !important;
+    box-shadow: 0px 0px 4px grey;
+}
+
+.review-swiper {
+    width: 85% !important;
+    overflow-x: hidden;
+}
+
+.img-card {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.subscribe {
+    background: url(../img/unsplash_TejFa7VW5e4.png);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* gap: 40px; */
+    margin-top: 50px;
+}
+
+form {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+footer h3 {
+    font-size: 18px !important;
+}
+
+.animation-I {
+    animation: animation-I 3s ease-in-out infinite;
+}
+
+.animation-II {
+    animation: animation-II 3s ease-in-out infinite;
+}
+
+@keyframes animation-I {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes animation-II {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+}
