@@ -5,73 +5,111 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            /* background: #000; */
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+    </style>
+
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/responsive.css">
+
+
 </head>
 
 <body>
     <header class="home-header mb-3">
-                <nav  class="navbar responsive-nav fixed-top">
-                    <div class="container-fluid ">
-                        <div class="container-fluid d-flex justify-content-between">
-                        <a class="navbar-brand" href="index.html"><img class="w-50" src="img/logo1 1.png"
-                                alt=""></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon "></span>
-                        </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link text-black active" aria-current="page" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-black" href="about.html">About</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-black dropdown-toggle" href="package.html" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Package
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item text-black" href="package.html">Family</a></li>
-                                            <li><a class="dropdown-item text-black" href="package.html">Solo</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
+        <nav class="navbar responsive-nav fixed-top">
+            <div class="container-fluid ">
+                <div class="container-fluid d-flex justify-content-between">
+                    <a class="navbar-brand" href="index.html"><img class="w-50" src="img/logo1 1.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link text-black active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-black dropdown-toggle" href="package.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Package
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-black" href="package.html">Family</a></li>
+                                        <li><a class="dropdown-item text-black" href="package.html">Solo</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
 
-                                        </ul>
-                                   <li class="nav-item">
-                                        <a class="nav-link text-black" href="destination.html">Destination</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-black" href="blog.html">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-black" href="contact.html">Contact</a>
-                                    </li>
+                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" href="destination.html">Destination</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black" href="contact.html">Contact</a>
+                                </li>
 
-                                </ul>
-                                <form class="d-flex mt-3" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search" />
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form>
-                            </div>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search"
+                                    aria-label="Search" />
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
                         </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+        </nav>
+        </div>
 
 
         </nav>
@@ -126,73 +164,80 @@
     <!-- ============================= first swiper ============================== -->
 
 
-    <section class="Explore mt-5 d-flex flex-column align-items-center justify-content-center w-100">
+    <section style="height: auto;"
+        class="Explore mt-5 d-flex flex-column align-items-center justify-content-center w-100">
         <div class="w-50 div text-center">
             <h1 class="text-black  fs-1">Explore new worlds with
 
                 exotic natural scenery</h1>
             <p class="span">Explore the world with what you love beautiful natural beauty.</p>
         </div>
-        <div class="swiper">
-            <main class="d-flex btn-white align-items-center justify-content-between m-3">
 
-                <button class="btn btn-white swipe-button" onclick="swipe_left()"><img src="img/Vector (3).png"
-                        alt=""></button>
-                <button class="btn" onclick="swipe_right()"><img src="img/Vector (3).png" alt=""></button>
-            </main>
 
-            <div class="swiper-slide-container translate gap-4">
-
-                <div class="card">
+        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
+            centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+            coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+            <swiper-slide>
+                <div class="card1">
                     <img class="object-fit-cover" src="img/unsplash_sELcHR_bGVs.png" alt="">
                     <div class="card-content p-2">
                         <h4>Bali, Indonesia.</h4>
                         <p>Bali is a beautiful tourist spot and is visited by many travelers.</p>
                     </div>
                 </div>
-
-                <div class="card">
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card1">
                     <img src="img/Group 46.png" class="object-fit-cover" alt="">
                     <div class="card-content p-2">
                         <h4>New York, USA.</h4>
                         <p>Known as the city that never sleeps, New York shines with its iconic skyline.</p>
                     </div>
                 </div>
-
-                <div class="card">
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card1">
                     <img src="img/avif" class="object-fit-cover" alt="">
                     <div class="card-content p-2">
                         <h4>Paris, France.</h4>
                         <p>Paris is the city of love and lights, known for the Eiffel Tower and cozy cafés.</p>
                     </div>
                 </div>
-
-                <div class="card">
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card1">
                     <img src="img/rome-things-to-do-guide.webp" class="object-fit-cover" alt="">
                     <div class="card-content p-2">
                         <h4>Rome, Italy.</h4>
                         <p>Rome blends history and beauty, home to the Colosseum and ancient ruins.</p>
                     </div>
                 </div>
+            </swiper-slide>
+            <swiper-slide>
 
-                <div class="card">
-                    <img src="img/a2cfa30a91130b5b42c01041776ddfd4.jpg" class="object-fit-cover" alt="">
+
+                <div class="card1">
+                    <img src="img/a2cfa30a91130b5b42c01041776ddfd4.jpg" style="
+    width: 100%;
+    height: 230px !important;" class="object-fit-cover" alt="">
                     <div class="card-content p-2">
                         <h4>Bangkok, Thailand.</h4>
                         <p>Bangkok welcomes you with golden temples and authentic Thai culture.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/Fujiyoshida_1544786567.avif" class="object-fit-cover" alt="">
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card1">
+                    <img src="img/Fujiyoshida_1544786567.avif" class="object-fit-cover " alt="">
                     <div class="card-content p-2">
                         <h4>Tokyo, Japan.</h4>
                         <p>Tokyo is a stunning mix of old and new, from serene temples to vibrant, futuristic streets.
                         </p>
                     </div>
                 </div>
+            </swiper-slide>
 
-            </div>
-        </div>
+        </swiper-container>
     </section>
     <!-- ============================= second swiper ============================== -->
 
@@ -203,18 +248,90 @@
             <h1 class="fs-1 text-center text-white">Why choose Us?</h1>
         </div>
         <div id="anime" class=" swiper-I">
-            <main class="d-flex align-items-center justify-content-between m-3">
+            <!-- <main class="d-flex align-items-center justify-content-between m-3">
 
                 <button onclick="swipe_l()" class="btn bg-white  swipe-button"><img src="img/Vector (3).png"
                         alt=""></button>
                 <button onclick="swipe_r()" class="btn bg-white "><img src="img/Vector (3).png" alt=""></button>
-            </main>
+            </main> -->
 
             <div class="swiper-slide-container swiperx translate gap-4">
 
+                <swiper-container class="mySwiper" slides-per-view="3" centered-slides="true" space-between="30"
+                    pagination="true" pagination-type="fraction" navigation="true">
+                    <swiper-slide style="height: 400px;">
+                        <div class="bg-white p-4 card2">
+                            <div class="card-item">
+                                <img src="img/Group 31.png" alt="">
+                                <h5 class="text-black">Best Service</h5>
+                                <p class="span">our service is reliable and convenient, our service is quality.</p>
+                                <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                        style="width: 25px !important; height: 25px;" alt=""></a>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="card ps-3 card2">
+                            <div class="card-item">
+                                <img src="img/Group 31 (1).png" alt="">
+                                <h5 class="text-black">Price Guarantee</h5>
+                                <p class="span">our service is reliable and convenient, our service is quality.</p>
+                                <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                        style="width: 25px !important; height: 25px;" alt=""></a>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="card ps-3 card2">
+                            <div class="card-item">
+                                <img src="img/Group 31 (2).png" alt="">
+                                <h5 class="text-black">Handpicked Hotels</h5>
+                                <p class="span">our service is reliable and convenient, our service is quality.</p>
+                                <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                        style="width: 25px !important; height: 25px;" alt=""></a>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide><div class="card ps-3 card2">
+                    <div class="card-item">
+                        <img src="img/3064197.png" alt="">
+                        <h5 class="text-black">Secure Booking</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div></swiper-slide>
+                    <swiper-slide> <div class="card ps-3 card2">
+                    <div class="card-item">
+                        <img src="img/3322835.png" alt="">
+                        <h5 class="text-black">Flexible Cancellation</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div></swiper-slide>
+                    <swiper-slide><div class="card ps-3 card2">
+                    <div class="card-item">
+                        <img src="img/discount--v1.png" alt="">
+                        <h5 class="text-black">Exclusive Travel Deals</h5>
+                        <p class="span">our service is reliable and convenient, our service is quality.</p>
+                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
+                                style="width: 25px !important; height: 25px;" alt=""></a>
+                    </div>
+                </div></swiper-slide>
+
+                </swiper-container>
+
+                <p class="append-buttons">
+                    <button class="prepend-2-slides"></button>
+                    <button class="prepend-slide"></button>
+                    <button class="append-slide"></button>
+                    <button class="append-2-slides"></button>
+                </p>
+
                 <!-- ============= card 1 =============== -->
 
-                <div class="card ps-3">
+                <!-- <div class="card ps-3 card2">
                     <div class="card-item">
                         <img src="img/Group 31.png" alt="">
                         <h5 class="text-black">Best Service</h5>
@@ -224,9 +341,9 @@
                     </div>
                 </div>
 
-                <!-- ============= card 2 =============== -->
+                <!-- ============= card 2 =============== 
 
-                <div class="card ps-3">
+                <div class="card ps-3 card2">
                     <div class="card-item">
                         <img src="img/Group 31 (1).png" alt="">
                         <h5 class="text-black">Price Guarantee</h5>
@@ -236,7 +353,7 @@
                     </div>
                 </div>
 
-                <div class="card ps-3">
+                <div class="card ps-3 card2">
                     <div class="card-item">
                         <img src="img/Group 31 (2).png" alt="">
                         <h5 class="text-black">Handpicked Hotels</h5>
@@ -246,16 +363,8 @@
                     </div>
                 </div>
 
-                <div class="card ps-3">
-                    <div class="card-item">
-                        <img src="img/3064197.png" alt="">
-                        <h5 class="text-black">Secure Booking</h5>
-                        <p class="span">our service is reliable and convenient, our service is quality.</p>
-                        <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
-                                style="width: 25px !important; height: 25px;" alt=""></a>
-                    </div>
-                </div>
-                <div class="card ps-3">
+                
+                <div class="card ps-3 card2">
                     <div class="card-item">
                         <img src="img/78944.png" alt="">
                         <h5 class="text-black">24/7 Customer Support</h5>
@@ -265,7 +374,7 @@
                     </div>
                 </div>
 
-                <div class="card ps-3">
+                <div class="card ps-3 card2">
                     <div class="card-item">
                         <img src="img/3322835.png" alt="">
                         <h5 class="text-black">Flexible Cancellation</h5>
@@ -275,7 +384,7 @@
                     </div>
                 </div>
 
-                <div class="card ps-3">
+                <div class="card ps-3 card2">
                     <div class="card-item">
                         <img src="img/discount--v1.png" alt="">
                         <h5 class="text-black">Exclusive Travel Deals</h5>
@@ -283,7 +392,7 @@
                         <a class="text-black" href="#">Learn more <img src="img/Vector 3 (1).png"
                                 style="width: 25px !important; height: 25px;" alt=""></a>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -324,7 +433,7 @@
                 <!-- =================== card 1 ========================== -->
                 <div class="d-flex gap-4 ">
                     <div
-                        class="card animation-II pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        class="card animation-I card3I pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
                         <div class="d-flex m-3 align-items-center justify-content-center flex-column">
                             <img class="rounded-5 object-fit-cover" style="width: 100px;" src="img/client 1.png" alt="">
                             <h5>Sara Jay</h5>
@@ -340,7 +449,7 @@
 
                     <!-- =================== card 2 ========================== -->
                     <div
-                        class="card animation-I pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        class="card animation-I card3 pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
                         <div class="d-flex m-3 align-items-center justify-content-center flex-column">
                             <img class="rounded-5 object-fit-cover" style="width: 100px;" src="img/client 2.png" alt="">
                             <h5>Cristian Daniel</h5>
@@ -355,7 +464,7 @@
                     </div>
                     <!-- =================== card 3 ========================== -->
                     <div
-                        class="card animation-II pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        class="card animation-I card3I pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
                         <div class="d-flex m-3 align-items-center justify-content-center flex-column">
                             <img class="rounded-5 object-fit-cover" style="width: 100px;" src="img/client 3.png" alt="">
                             <h5>Kausar Hasan</h5>
@@ -370,7 +479,7 @@
                     </div>
                     <!-- =================== card 4 ========================== -->
                     <div
-                        class="card animation-I pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        class="card animation-I card3 pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
                         <div class="d-flex m-3 align-items-center justify-content-center flex-column">
                             <img class="object-fit-cover img-card" style="width: 100px;"
                                 src="img/pexels-photo-774909.jpeg" alt="">
@@ -386,7 +495,7 @@
                     </div>
                     <!-- =================== card 5 ========================== -->
                     <div
-                        class="card animation-II pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        class="card animation-I card3I pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
                         <div class="d-flex m-3 align-items-center justify-content-center flex-column">
                             <img class=" object-fit-cover img-card" style="width: 100px;"
                                 src="img/pexels-photo-220453.jpeg" alt="">
@@ -402,7 +511,7 @@
                     </div>
                     <!-- =================== card 6 ========================== -->
                     <div
-                        class="card animation-I pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
+                        class="card animation-I card3 pt-5 d-flex align-items-center justify-content-center flex-column gap-4">
                         <div class="d-flex m-3 align-items-center justify-content-center flex-column">
                             <img class=" object-fit-cover img-card" style="width: 100px;"
                                 src="img/pexels-photo-415829.jpeg" alt="">
@@ -481,6 +590,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/704bbd17a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 </body>
 

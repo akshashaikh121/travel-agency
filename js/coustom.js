@@ -64,56 +64,56 @@ function date_set() {
 // // swiper
 
 
-let x = 0;
-const step = 330;
-const maxRight = -940;
-const swiper = document.querySelector(".swiper div");
+// let x = 0;
+// const step = 330;
+// const maxRight = -940;
+// const swiper = document.querySelector(".swiper div");
 
 
 
-function swipe_left() {
-  if (x < 0) {
-    x += step;
-    updateSwiper();
-  }
-}
+// function swipe_left() {
+//   if (x < 0) {
+//     x += step;
+//     updateSwiper();
+//   }
+// }
 
-function swipe_right() {
-  if (x > maxRight) {
-    x -= step;
-    updateSwiper();
-  }
-}
+// function swipe_right() {
+//   if (x > maxRight) {
+//     x -= step;
+//     updateSwiper();
+//   }
+// }
 
-function updateSwiper() {
-  swiper.style.transform = `translateX(${x}px)`;
-  swiper.style.transition = "transform 0.5s ease";
-}
+// function updateSwiper() {
+//   swiper.style.transform = `translateX(${x}px)`;
+//   swiper.style.transition = "transform 0.5s ease";
+// }
 
 
-let a = 0;
-const s = 315;
-const right = -1200;
+// let a = 0;
+// const s = 315;
+// const right = -1200;
 
-function update() {
-  const swiperx = document.querySelector(".swiperx");
-  swiperx.style.transform = `translateX(${a}px)`;
-  swiperx.style.transition = "transform 0.5s ease";
-}
+// function update() {
+//   const swiperx = document.querySelector(".swiperx");
+//   swiperx.style.transform = `translateX(${a}px)`;
+//   swiperx.style.transition = "transform 0.5s ease";
+// }
 
-function swipe_l() {
-  if (a < 0) {
-    a += s;
-    update();
-  }
-}
+// function swipe_l() {
+//   if (a < 0) {
+//     a += s;
+//     update();
+//   }
+// }
 
-function swipe_r() {
-  if (a > right) {
-    a -= s;
-    update();
-  }
-}
+// function swipe_r() {
+//   if (a > right) {
+//     a -= s;
+//     update();
+//   }
+// }
 
 
 let i = 0;
@@ -157,3 +157,80 @@ function handleSubmit(event) {
   // If valid
   alert("Subscribed! You’ll get the latest updates 🎉");
 }
+
+
+// // ========== FIRST SWIPER ========== //
+// let cards = document.getElementsByClassName("card1");
+// let swiper1 = document.querySelector(".swiper .swiper-slide-container");
+// let index = 0; // current card position
+
+// function swipe_left() {
+//   if (index > 0) {
+//     index--;
+//     updateSwiper1();
+//   }
+// }
+
+// function swipe_right() {
+//   if (index < cards.length - 1) {
+//     index++;
+//     updateSwiper1();
+//   }
+// }
+
+// function updateSwiper1() {
+//   const offset = -index * 330; // move 330px per card
+//   swiper1.style.transform = `translateX(${offset}px)`;
+//   swiper1.style.transition = "transform 0.5s ease";
+// }
+
+
+// // ========== SECOND SWIPER ========== //
+// let card = document.getElementsByClassName("card2");
+// let swiper2 = document.querySelector(".swiperx"); // fix: use the correct class
+// let position = 0; // current card position
+
+// function swipe_l() {
+//   if (position > 0) {
+//     position--;
+//     updateSwiper2();
+//   }
+// }
+
+// function swipe_r() {
+//   if (position < card.length - 1) {
+//     position++;
+//     updateSwiper2();
+//   }
+// }
+
+// function updateSwiper2() {
+//   const offset = -position * 320; // move 330px per card
+//   swiper2.style.transform = `translateX(${offset}px)`;
+//   swiper2.style.transition = "transform 0.5s ease";
+// }
+
+// // ========== SECOND SWIPER ========== //
+// let card3 = document.getElementsByClassName("card3");
+// let swiper3 = document.querySelector(".review-swiper div"); // fix: use the correct class
+// let arr_index = 0; // current card position
+
+// function Left() {
+//   if (arr_index > 0) {
+//     arr_index--;
+//     updateSwiper3();
+//   }
+// }
+
+// function Right() {
+//   if (arr_index < card.length - 1) {
+//     arr_index++;
+//     updateSwiper3();
+//   }
+// }
+
+// function updateSwiper3() {
+//   const offset = -arr_index * 265; // move 330px per card
+//   swiper3.style.transform = `translateX(${offset}px)`;
+//   swiper3.style.transition = "transform 0.5s ease";
+// }
