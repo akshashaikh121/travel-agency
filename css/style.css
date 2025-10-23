@@ -319,3 +319,24 @@ html,
 body {
     overflow-x: hidden;
 }
+
+.about-header {
+    background-image: url(../img/about/unsplash_rjfOdiB7k-E.png);
+    height: 120vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.sub-div-I{
+    width: 50%;
+    height: 50vh;
+}
+.sub-div-I img{
+    width: 60px;
+    height: 70px;    
+}
+.banner{
+    background-image: url(../img/about/unsplash_okVXy9tG3KY.png);
+    height: 80vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
