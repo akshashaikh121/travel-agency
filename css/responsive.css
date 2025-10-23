@@ -41,6 +41,9 @@
     .Explore .card p {
         font-size: 14px;
     }
+    .carousel-inner{
+        width: 100% !important;
+    }
 
     .card-content {
         position: absolute;
