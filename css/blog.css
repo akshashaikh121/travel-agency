@@ -1,0 +1,95 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #f8f9fa; */
+}
+
+.navbar {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+}
+
+.subscribe {
+    background: url(../img/unsplash_TejFa7VW5e4.png);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* gap: 40px; */
+    margin-top: 50px;
+}
+
+form {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+footer h3 {
+    font-size: 18px !important;
+}
+a {
+    color: aliceblue !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: rgb(189, 185, 185) !important;
+}
+
+.stroke {
+    background-color: rgb(64, 64, 64) !important;
+    border-radius: 10px;
+    width: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 2px white;
+
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.card-body h5 {
+  font-weight: 600;
+}
+
+.content p {
+  line-height: 1.7;
+}
+
+.tags, .share {
+  font-size: 14px;
+}
+.header{
+   height: 80vh; 
+}
+
+.card img {
+  object-fit: cover;
+}
+header{
+    height: 100vh;
+}
+.about-header {
+    background-image: url(../img/blog/unsplash_NXET8dOlKHU\ \(1\).png);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+html,body{
+    overflow-x: hidden;
+}
+
+.header-content {
+    width: 50% !important;
+    height: 40%;
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+
+}
