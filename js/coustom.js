@@ -55,7 +55,7 @@ function decrementValue() {
 function date_set() {
   let date = document.getElementById("date")
   date.innerHTML = `
-    <div class="d-flex align-items-center gap-2">
+    <div class="d-flex align-items-center text-black rounded-5 px-3 m-3 bg-white gap-3">
   <label for="travelDate" class="fw-semibold">Date:</label>
   <input type="date" id="travelDate" class="form-control border-0 bg-white rounded-3 px-2 py-1">
 </div>`
@@ -234,3 +234,21 @@ function handleSubmit(event) {
 //   swiper3.style.transform = `translateX(${offset}px)`;
 //   swiper3.style.transition = "transform 0.5s ease";
 // }
+
+
+function send_button(){
+  let input = document.getElementById("input").value
+  let email_input = document.getElementById("email_input").value
+  let subject_input = document.getElementById("subject_input").value
+  let text_input = document.getElementById("text_input").value
+
+  if (input !== "" && email_input !== "" && subject_input !== "" && text_input !== ""){
+  alert("Your message has been sent")
+}
+else if(email_input === "" && subject_input === "" && text_input === ""){
+  alert("Please fill full form")
+}
+else if( text_input === ""){
+  alert("Please fill full form")
+}
+}

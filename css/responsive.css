@@ -65,7 +65,7 @@
     }
 
     .explore {
-        width: 70%;
+        width: fit-content;
         padding: 1px 10px !important;
         justify-content: start !important;
         align-items: start;
@@ -73,8 +73,11 @@
         margin: 0px !important;
 
     }
-
-    .subscribe input {
+.navbar{
+    padding: 0 !important;
+    /* margin-bottom:20px ; */
+}
+ .subscribe input {
         width: 100% !important;
     }
 
@@ -83,6 +86,17 @@
         right: 100px;
         top: 70px;
     }
+.about-heading div{
+    margin: 0px !important;
+    gap: 0px !important;
+}
+.about-heading div p{
+    font-size: 14px !important;
+}
+.about-heading div img{
+    width: 13px;
+    height: 13x;
+}
 
    footer .row > .col-md-5 img {
     width: 100%;
@@ -107,7 +121,7 @@
     .home-header {
         height: fit-content;
         width: 100%;
-        height: auto;
+        height: auto !important;
         background-size: 100%;
         background-repeat: no-repeat;
         display: flex;
@@ -123,7 +137,7 @@
     }
 .about-header {
     background-image: url(../img/about/unsplash_rjfOdiB7k-E.png);
-    height: 22vh !important;
+    height: 100% !important;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -133,10 +147,10 @@
     flex-direction: column !important;
     justify-content: center !important;
     width: 100% !important;
-    height: 22vh !important;
+    height: 100% !important;
 }
 header{
-    height: 22vh !important;
+    height: 38vh !important;
 }
 .about-heading h2{
     font-size: 20px !important;
@@ -145,8 +159,9 @@ header{
     font-size: 15px !important;
 }
     .content-container {
-        align-items: start !important;
+        align-items: center !important;
         flex-wrap: wrap;
+        flex-direction: column !important;
         width: 100%;
         justify-content: start !important;
     } 
@@ -201,10 +216,9 @@ header{
 @media (min-width:900px) and (max-width:1800px) {
     .responsive-nav{
         display: none !important;
-    }
-    
+    }  
 }
-@media (min-width:768px) and (max-width:996px) {
+@media (min-width:766px) and (max-width:996px) {
 
     /* .explore {
         width: 35%;
@@ -282,10 +296,13 @@ header p {
    footer .row > .col-md-5 img {
     width: 100%;
 }
+header{
+    height: 80vh;
+}
    
 .about-header {
     background-image: url(../img/about/unsplash_rjfOdiB7k-E.png);
-    height: 50vh;
+    height: 100% ;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -295,16 +312,16 @@ header p {
     flex-direction: column !important;
     justify-content: center !important;
     width: 100% !important;
-    height: 50vh !important;
+    height: 100% !important;
     
 }
 .about-heading h2{
-    font-size: 20px !important;
-    color: #000 !important;
+    font-size: 40px !important;
+    color: #fff !important;
 }
 .about-heading p{
-    font-size: 15px !important;
-    color: rgb(71, 64, 64) !important;
+    font-size: 25px !important;
+    color: #fff !important;
 
 }
     .content-container {
@@ -364,9 +381,10 @@ justify-content: center;
     
 .about-header {
     background-image: url(../img/about/unsplash_rjfOdiB7k-E.png);
-    height: 27vh !important;
+    height: 100% !important;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-    
+
+
 }

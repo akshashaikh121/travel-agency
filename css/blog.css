@@ -75,7 +75,7 @@ header{
 }
 .about-header {
     background-image: url(../img/blog/unsplash_NXET8dOlKHU\ \(1\).png);
-    height: 100%;
+    height: 100% !important;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
@@ -92,4 +92,17 @@ html,body{
     align-items: end;
     flex-wrap: wrap;
 
+}
+@media (min-width:768px) and (max-width:996px) {
+
+
+.about-heading h2{
+    font-size: 40px !important;
+    color: #000 !important;
+    width: 60% !important;
+    color: aliceblue !important;
+}
+.about-heading p{
+  color: white !important;
+}
 }

@@ -9,7 +9,419 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff;
+        }
 
+        header {
+            height: 100vh !important;
+        }
+
+        .popular-section {
+            padding: 60px 0;
+        }
+
+        .popular-section h2 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .popular-section p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .discover-btn {
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 25px;
+            font-weight: 500;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+            height: fit-content !important;
+            width: 100% !important;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .price {
+            color: #000;
+            font-weight: 600;
+        }
+
+        .days {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .stars {
+            color: #f9b934;
+        }
+
+        .book-btn {
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            padding: 8px 20px;
+            border: none;
+            transition: 0.3s ease;
+        }
+
+        .book-btn:hover {
+            background-color: #333;
+        }
+
+        .bottom-banner img {
+            width: 100%;
+            border-radius: 20px;
+            margin-top: 50px;
+        }
+
+        .tips-section {
+            padding: 70px 0;
+        }
+
+        .tips-section h2 {
+            font-weight: 700;
+        }
+
+        .tips-section p {
+            color: #666;
+        }
+
+        .view-btn {
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 25px;
+            font-weight: 500;
+            border: none;
+        }
+
+        .article-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: 0.3s ease;
+            background-color: #fff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-card h5 {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .article-card h4 {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .article-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .read-btn {
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 25px;
+            width: fit-content;
+            border: none;
+            font-weight: 500;
+        }
+
+        .article-img {
+            width: 100%;
+            border-radius: 15px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        header {
+            height: 60vh;
+        }
+
+        .about-header {
+            background: url(img/package/Banner.png);
+            height: 100% !important;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .about-heading {
+            height: 100%;
+        }
+
+        @media (min-width: 990px) {
+            .responsive-nav {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .card img {
+                height: 180px;
+            }
+
+            .responsive-nav {
+                height: 50px;
+            }
+
+            header {
+                height: 65vh !important;
+            }
+
+            .about-header {
+                height: 100% !important;
+                /* background-image: url(../img/package/banner); */
+                /* height: 120vh; */
+                /* display: flex; */
+                display: block !important;
+                /* justify-content: center; */
+                /* align-items: center; */
+                /* flex-direction: column; */
+
+            }
+
+            .about-heading {
+                height: 100%;
+            }
+
+            .about-heading h2,
+            .about-heading p {
+                color: #fff !important;
+                font-size: 20px !important;
+            }
+
+            .about-heading h2 {
+                font-size: 40px !important;
+            }
+
+            .article-card {
+                padding: 25px;
+            }
+        }
+
+        /* For tablets (≤992px) */
+        @media (max-width: 992px) {
+            .popular-section {
+                padding: 50px 0;
+            }
+
+            header {
+                height: 60vh !important;
+            }
+
+            .about-header {
+                height: 100% !important;
+                /* background-image: url(../img/package/banner); */
+                /* height: 120vh; */
+
+
+            }
+
+            .about-heading {
+                height: 100% !important;
+            }
+
+
+
+            .about-heading h2,
+            .about-heading p {
+                color: #fff !important;
+                font-size: 20px !important;
+            }
+
+            .about-heading h2 {
+                font-size: 40px !important;
+            }
+
+            .tips-section {
+                padding: 50px 0;
+            }
+
+            .article-col {
+                gap: 20px;
+            }
+
+            .card img {
+                height: 170px;
+            }
+
+            .article-card h4 {
+                font-size: 18px;
+            }
+
+            .btn-black {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+        }
+
+        /* For mobile devices (≤768px) */
+        @media (max-width: 768px) {
+
+            header {
+                height: 50vh !important;
+            }
+
+            .about-header {
+                height: 100% !important;
+                /* background-image: url(../img/package/banner); */
+                /* height: 120vh; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .about-heading {
+                height: 100%;
+            }
+
+            .about-heading h2,
+            .about-heading p {
+                color: #fff !important;
+                font-size: 15px !important;
+            }
+
+            .non-responsive-nav {
+                display: none;
+            }
+
+            .about-heading h2 {
+                font-size: 30px !important;
+            }
+
+            .popular-section h2,
+            .tips-section h2 {
+                font-size: 26px;
+            }
+
+            .card img {
+                height: 160px;
+            }
+
+            .card-body {
+                padding: 15px;
+            }
+
+            .article-card {
+                padding: 20px;
+            }
+
+            .article-img {
+                height: 250px;
+            }
+
+            .text-end.mb-4 {
+                text-align: left !important;
+            }
+
+            .btn-black {
+                font-size: 13px;
+                padding: 7px 18px;
+            }
+
+            .stars {
+                font-size: 14px;
+            }
+        }
+
+        /* For very small screens (≤576px) */
+        @media (max-width: 576px) {
+            body {
+                padding: 0 10px;
+            }
+
+            header {
+                height: 40vh !important;
+            }
+
+            .about-header {
+                height: 100% !important;
+                /* background-image: url(../img/package/banner); */
+                /* height: 120vh; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .about-heading {
+                height: 100%;
+            }
+
+            .popular-section,
+            .tips-section {
+                padding: 40px 0;
+            }
+
+            .card img {
+                height: 150px;
+            }
+
+            .article-card {
+                text-align: center;
+            }
+
+            .article-card h4 {
+                font-size: 17px;
+            }
+
+            .btn-black {
+                width: 100%;
+            }
+
+            .read-btn {
+                width: 100%;
+            }
+
+            .article-img {
+                height: 220px;
+            }
+        }
+    </style>
 
 </head>
 
@@ -73,6 +485,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </nav>
 
 
@@ -87,24 +500,190 @@
 
                     <div class="nav-item"></div>
                     <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link" href="">About</a>
-                    <a class="nav-link" href="">Package</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="package.html">Package</a>
                     <a class="nav-link" href="">Destination</a>
                     <a class="nav-link" href="blog.html">Blog</a>
-                    <a class="nav-link" href="">Contact</a>
-                    <a class="nav-link stroke" href=""><img src="img/Vector (4).png" alt=""></a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link stroke" href=""><img src="img/Vector (17).png" alt=""></a>
                 </div>
 
             </nav>
             <div style="height: 100%;"
                 class=" about-heading d-flex align-items-center flex-column  justify-content-center ">
-                <h2 class="fs-1 text-white ">About us</h2>
-                <p class="fs-5 text-center"> Home <img src="img/about/Vector (12).png" alt=""> About Us</p>
+                <h2 class="fs-1 text-white ">Travel Packages</h2>
+                <p class="fs-5 text-center"> Home <img src="img/about/Vector (12).png" alt="">Packages</p>
             </div>
         </div>
 
     </header>
+    <section class="popular-section container text-center">
+        <h2 class="text-start">Popular Destination</h2>
+        <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna.</p>
+        <div class="text-end mb-4">
+            </a> <button class="discover-btn">Discover more</button>
+        </div>
 
+        <div class="row g-4">
+            <!-- Paris -->
+            <div id="card1" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/package/unsplash_QAwciFlS1g4.png" alt="Paris">
+                    <div class="card-body text-start">
+                        <h5>Paris</h5>
+                        <p><span class="price">$299.00</span>/3days</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card1')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiss -->
+            <div id="card2" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/package/unsplash_IoUnv2cfx1c.png" alt="Swiss">
+                    <div class="card-body text-start">
+                        <h5>Swiss</h5>
+                        <p><span class="price">$299.00</span>/3days</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card2')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thailand -->
+            <div id="card3" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/package/unsplash_gsllxmVO4HQ.png" alt="Thailand">
+                    <div class="card-body text-start">
+                        <h5>Thailand</h5>
+                        <p><span class="price">$299.00</span>/3days</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card3')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Taiwan -->
+            <div id="card4" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/package/unsplash_UDv1n0xIpU8.png" alt="Taiwan">
+                    <div class="card-body text-start">
+                        <h5>Taiwan</h5>
+                        <p><span class="price">$299.00</span>/3days</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card4')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indonesia -->
+            <div id="card5" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/package/unsplash__QTeGT478_8.png" alt="Indonesia">
+                    <div class="card-body text-start">
+                        <h5>Indonesia</h5>
+                        <p><span class="price">$299.00</span>/3days</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card5')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Singapore -->
+            <div id="card6" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/package/unsplash_Ncmd8uLe8H0.png" alt="Singapore">
+                    <div id="card6" class="card-body text-start">
+                        <h5>Singapore</h5>
+                        <p><span class="price">$299.00</span>/3days</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card6')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom banner -->
+        <div class="bottom-banner mt-5">
+            <img src="img/package/unsplash_okVXy9tG3KY (1).png" alt="Travel banner" />
+        </div>
+    </section>
+
+    <section class="tips-section container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h2>Tips & Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna</p>
+            </div>
+            <button class="view-btn">View more</button>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+            <!-- Left Column -->
+            <div class="col-md-6 col-lg-4 article-col">
+                <div class="article-card text-start">
+                    <h6>Perfect | Tips</h6>
+                    <h4>9 Popular Travel Destination on Sale in 2022 -</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna</p>
+                    <button class="read-btn">Read More</button>
+                </div>
+
+                <div class="article-card text-start">
+                    <h6>Tips | Travel</h6>
+                    <h4>How Are We Going to Travel in 2022 -</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna</p>
+                    <button class="read-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6 col-lg-8">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <img src="img/package/unsplash_1XLyzi17Z2M.png" alt="Family Travel" class="article-img mb-3" />
+                    </div>
+                    <div class="col-12">
+                        <div class="article-card text-start">
+                            <h6>Stories | Tips</h6>
+                            <h4>Travel Stories For Now and the Future</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna</p>
+                            <button class="read-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="subscribe">
         <div class="subscribe-container d-flex flex-column justify-content-around gap-4 text-center m-3 py-5">
             <div>
@@ -168,6 +747,7 @@
     <script src="https://kit.fontawesome.com/704bbd17a1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+    <script src="js/booknow.js"></script>
 </body>
 
 </html>
