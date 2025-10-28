@@ -521,11 +521,111 @@
         <h2 class="text-start">Popular Destination</h2>
         <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna.</p>
-        <div class="text-end mb-4">
-            </a> <button class="discover-btn">Discover more</button>
-        </div>
 
         <div class="row g-4">
+
+            <!-- Dubai -->
+            <div id="card7" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/download.jpeg" alt="Dubai">
+                    <div class="card-body text-start">
+                        <h5>Dubai</h5>
+                        <p><span class="price">$349.00</span>/4days</p>
+                        <p class="text-muted">Experience luxury in the desert — from sky-high towers to golden dunes.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card7')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maldives -->
+            <div id="card14" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/download2.jpeg" alt="Maldives">
+                    <div class="card-body text-start">
+                        <h5>Maldives</h5>
+                        <p><span class="price">$499.00</span>/5days</p>
+                        <p class="text-muted">Turquoise waters and white sands await — your perfect island escape.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card14')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New York -->
+            <div id="card15" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/Group 46.png" alt="New York">
+                    <div class="card-body text-start">
+                        <h5>New York</h5>
+                        <p><span class="price">$399.00</span>/4days</p>
+                        <p class="text-muted">The city that never sleeps — explore iconic landmarks and city lights.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card15')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Egypt -->
+            <div id="card16" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/ancient-egypt-one-wonders-worlds-egyptian-pyramids-sunset-sunrise-built-pharos-s-pyramid-egyptians-spectacular-267155511.webp"
+                        alt="Egypt">
+                    <div class="card-body text-start">
+                        <h5>Egypt</h5>
+                        <p><span class="price">$279.00</span>/3days</p>
+                        <p class="text-muted">Discover ancient pyramids, temples, and the mystery of the Nile.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card16')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Japan -->
+            <div id="card17" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/Fujiyoshida_1544786567.avif" alt="Japan">
+                    <div class="card-body text-start">
+                        <h5>Japan</h5>
+                        <p><span class="price">$459.00</span>/5days</p>
+                        <p class="text-muted">From cherry blossoms to neon cities — tradition meets technology.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card17')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Turkey -->
+            <div id="card18" class="col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="img/blue-mosque-turkish-landmarks.jpg" alt="Turkey">
+                    <div class="card-body text-start">
+                        <h5>Turkey</h5>
+                        <p><span class="price">$329.00</span>/4days</p>
+                        <p class="text-muted">Where East meets West — explore Istanbul’s charm and Cappadocia’s skies.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="stars">★★★★★</div>
+                            <button onclick="bookFunction('card18')" class="book-btn">Booking now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="more-item" class="row g-4 d-none">
             <!-- Paris -->
             <div id="card1" class="col-md-4 col-lg-4">
                 <div class="card">
@@ -627,6 +727,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="text-center my-4">
+            <button id="btn1" onclick="moreItem()" class="discover-btn">Show More</button>
+            <button id="btn2" onclick="lessItem()" class="discover-btn d-none">Show Less</button>
         </div>
 
         <!-- Bottom banner -->
